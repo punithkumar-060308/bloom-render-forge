@@ -17,10 +17,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div
       onClick={() => navigate(`/project/${project.id}`)}
-      className="glass-card rounded-2xl p-6 cursor-pointer hover:border-primary/40 hover:shadow-xl transition-all duration-300 group"
+      className="glass-card rounded-2xl p-6 cursor-pointer"
     >
       <div className="flex items-start justify-between mb-4">
-        <h3 className="font-mono font-semibold text-lg group-hover:text-primary transition-colors">
+        <h3 className="font-mono font-semibold text-lg">
           {project.name}
         </h3>
         <Badge variant="outline" className={statusStyles[project.status]}>
@@ -51,7 +51,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         </div>
         <div className="h-1.5 rounded-full bg-secondary overflow-hidden">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-primary to-accent transition-all duration-500"
+            className="h-full rounded-full bg-gradient-to-r from-primary to-accent"
             style={{ width: `${progress}%` }}
           />
         </div>
