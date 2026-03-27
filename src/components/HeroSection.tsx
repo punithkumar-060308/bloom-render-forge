@@ -73,8 +73,8 @@ const HeroSection = () => {
               className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 hover:border-primary/40 group"
               style={{ animationDelay: `${i * 150}ms`, animationFillMode: "both" }}
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <feature.icon className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 transition-colors duration-300 group-hover:bg-primary/20">
+                <feature.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
               </div>
               <h3 className="font-mono font-semibold text-lg mb-2">{feature.title}</h3>
               <p className="text-muted-foreground text-sm">{feature.desc}</p>

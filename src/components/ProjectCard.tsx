@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       className="glass-card rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/30 animate-fade-in group"
     >
       <div className="flex items-start justify-between mb-4">
-        <h3 className="font-mono font-semibold text-lg">
+        <h3 className="font-mono font-semibold text-lg transition-colors duration-200 group-hover:text-primary">
           {project.name}
         </h3>
         <Badge variant="outline" className={statusStyles[project.status]}>
