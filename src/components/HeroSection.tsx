@@ -2,13 +2,15 @@ import { ArrowRight, Code2, Users, Kanban } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-illustration.png";
+import CodeRainBackground from "@/components/CodeRainBackground";
 
 const HeroSection = () => {
   const navigate = useNavigate();
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 grid-pattern opacity-50" />
+      <CodeRainBackground />
+      <div className="absolute inset-0 grid-pattern opacity-30" />
 
       <div className="container relative z-10 mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
