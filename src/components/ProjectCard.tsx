@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div
       onClick={() => navigate(`/project/${project.id}`)}
-      className="glass-card rounded-2xl p-6 cursor-pointer"
+      className="glass-card rounded-2xl p-6 cursor-pointer transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 animate-fade-in"
     >
       <div className="flex items-start justify-between mb-4">
         <h3 className="font-mono font-semibold text-lg">
