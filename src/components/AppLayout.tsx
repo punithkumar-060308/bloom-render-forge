@@ -7,9 +7,9 @@ import { useState } from "react";
 const navItems = [
   { label: "Home", icon: Home, path: "/" },
   { label: "Dashboard", icon: LayoutDashboard, path: "/dashboard" },
-  { label: "Projects", icon: FolderKanban, path: "/dashboard" },
-  { label: "Team", icon: Users, path: "/dashboard" },
-  { label: "Settings", icon: Settings, path: "/dashboard" },
+  { label: "Projects", icon: FolderKanban, path: "/projects" },
+  { label: "Team", icon: Users, path: "/team" },
+  { label: "Settings", icon: Settings, path: "/settings" },
 ];
 
 const AppLayout = ({ children }: { children: ReactNode }) => {
