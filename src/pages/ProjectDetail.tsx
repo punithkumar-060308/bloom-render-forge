@@ -91,6 +91,11 @@ const ProjectDetail = () => {
             ))}
           </div>
         </div>
+
+        {/* Team Chat */}
+        <div className="mt-8">
+          <ProjectChat />
+        </div>
       </div>
     </AppLayout>
   );
