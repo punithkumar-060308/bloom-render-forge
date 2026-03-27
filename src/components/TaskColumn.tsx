@@ -17,7 +17,7 @@ const columnConfig: Record<Task["status"], { label: string; color: string }> = {
 };
 
 const TaskCard = ({ task }: { task: Task }) => (
-  <div className="glass-card rounded-xl p-4 cursor-pointer">
+  <div className="glass-card rounded-xl p-4 cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
     <div className="flex items-start justify-between mb-2">
       <h4 className="font-medium text-sm leading-tight">{task.title}</h4>
       <Flag className={`w-3.5 h-3.5 flex-shrink-0 ml-2 ${priorityColors[task.priority]}`} />

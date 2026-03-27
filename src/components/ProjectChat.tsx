@@ -47,7 +47,7 @@ const ProjectChat = () => {
           {messages.map((msg) => {
             const isMe = msg.sender.name === "You";
             return (
-              <div key={msg.id} className={`flex gap-2.5 ${isMe ? "flex-row-reverse" : ""}`}>
+              <div key={msg.id} className={`flex gap-2.5 animate-fade-in ${isMe ? "flex-row-reverse" : ""}`}>
                 <Avatar className="w-7 h-7 flex-shrink-0">
                   <AvatarImage src={msg.sender.avatar} />
                   <AvatarFallback className="text-[10px]">{msg.sender.name[0]}</AvatarFallback>

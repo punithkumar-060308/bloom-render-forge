@@ -23,7 +23,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
       <aside
         className={`${
           sidebarOpen ? "w-60" : "w-16"
-        } bg-sidebar border-r border-sidebar-border flex flex-col transition-all duration-300 fixed inset-y-0 left-0 z-40 lg:relative`}
+        } bg-sidebar border-r border-sidebar-border flex flex-col transition-[width] duration-300 ease-in-out fixed inset-y-0 left-0 z-40 lg:relative`}
       >
         <div className="p-4 flex items-center gap-3 border-b border-sidebar-border">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
