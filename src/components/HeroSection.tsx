@@ -70,7 +70,7 @@ const HeroSection = () => {
           ].map((feature, i) => (
             <div
               key={feature.title}
-              className="glass-card rounded-2xl p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5"
+              className="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 hover:border-primary/40 group"
               style={{ animationDelay: `${i * 150}ms`, animationFillMode: "both" }}
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
