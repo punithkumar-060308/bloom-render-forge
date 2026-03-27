@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import TaskColumn from "@/components/TaskColumn";
+import ProjectChat from "@/components/ProjectChat";
 import { mockProjects, mockTasks, type Task } from "@/lib/mock-data";
 import AppLayout from "@/components/AppLayout";
 
